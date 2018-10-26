@@ -1,6 +1,6 @@
 {
   "name": "jsonview-vue",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "a vue component to view json",
   "main": "dist/jsonview.js",
   "scripts": {
