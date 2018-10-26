@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jsonview</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app phone">
+    <json-view :json="json" :closed="true">
+    </json-view>
+  </div>
+  <script src="../dist/jsonview.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    console.log(Jsonview);
+    var a = {b: 2, a: 1}
+    a.a = a
+    console.log(a)
+
+    Vue.use(Jsonview);
+    new Vue({
+      el: '.app',
+      data() {
+        return {
+          json: { "candidates": [{ "dmName": "chatbot", "domainName": null, "intent": null, "confidence": 1.0, "action": [], "nluData": null, "setDomainName": false, "setIntent": false, "setConfidence": true, "actionSize": 0, "actionIterator": [1, 2], "setDmName": true, "setNluData": false, "setAction": true }] }
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
