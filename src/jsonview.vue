@@ -105,7 +105,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    white-space: nowrap;
     padding-left: 20px;
     .json-item {
       margin: 0;
@@ -160,4 +160,3 @@
     }
   }
 </style>
-
