@@ -107,6 +107,7 @@
     height: 100%;
     white-space: nowrap;
     padding-left: 20px;
+    box-sizing: border-box;
     .json-item {
       margin: 0;
       padding-left: 20px;

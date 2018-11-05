@@ -17,7 +17,7 @@
 
 <body>
   <div class="app phone">
-    <json-view :json="json" :closed="true">
+    <json-view :json="json" :closed="false">
     </json-view>
   </div>
   <script src="../dist/jsonview.min.js"></script>
@@ -28,9 +28,12 @@
     a.a = a
     console.log(a)
 
-    Vue.use(Jsonview);
+    // Vue.use(Jsonview);
     new Vue({
       el: '.app',
+      components: {
+        jsonView: Jsonview.jsonView
+      },
       data() {
         return {
           json: { "candidates": [{ "dmName": "chatbot", "domainName": null, "intent": null, "confidence": 1.0, "action": [], "nluData": null, "setDomainName": false, "setIntent": false, "setConfidence": true, "actionSize": 0, "actionIterator": [1, 2], "setDmName": true, "setNluData": false, "setAction": true }] }
