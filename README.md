@@ -13,32 +13,34 @@ npm install jsonview-vue -S
 2、 引入
 
 ```
-import jsonview from 'jsonview-vue';
+import JsonView from 'jsonview-vue';
 import Vue from 'vue';
 
-Vue.use(jsonview);
+Vue.use(JsonView);
 ```
 
 ```
 // 在组件中引入
-import {jsonview} from 'jsonview-vue';
+import { jsonView } from 'jsonview-vue';
 
 // ...
 // components: {
-//    jsonvue
+//    jsonView
 // }
+// ...
 ```
 script标签
 ```
 // 引入js
-Vue.use(Jsonview);
+Vue.use(JsonView);
 
 
 // 组件中
 // ...
 // components: {
-//    jsonView: Jsonview.jsonView
+//    jsonView: JsonView.jsonView
 // }
+// ...
 ```
 
 3、使用

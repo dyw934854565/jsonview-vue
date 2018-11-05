@@ -10,7 +10,7 @@ var config = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].min.js",
-    library: "Jsonview",
+    library: "JsonView",
     libraryTarget: "umd",
     umdNamedDefine: true
   },
