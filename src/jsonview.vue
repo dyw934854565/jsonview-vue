@@ -82,18 +82,25 @@
       },
       items () {
         if (this.isArray) {
-          return this.json.map(item => ({
-            value: item,
-            isJSON: this.isObjectOrArray(item),
-            key: ''
-          }))
+          return this.json.map(item => {
+            const isJSON = this.isObjectOrArray(item)
+            return {
+              value: isJSON ? item : JSON.stringify(item),
+              isJSON,
+              key: ''
+            }
+          })
         }
         const json = this.json
-        return Object.keys(json).map(key => ({
-          value: json[key],
-          isJSON: this.isObjectOrArray(json[key]),
-          key
-        }))
+        return Object.keys(json).map(key => {
+          const item = json[key]
+          const isJSON = this.isObjectOrArray(item)
+          return {
+            value: isJSON ? item : JSON.stringify(item),
+            isJSON,
+            key
+          }
+        })
       }
     }
   }
