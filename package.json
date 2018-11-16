@@ -1,5 +1,5 @@
 {
-  "name": "jsonview-vue",
+  "name": "@mtfe/jsonview-vue",
   "version": "2.0.1",
   "description": "a vue component to view json",
   "main": "dist/jsonview.js",
