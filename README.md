@@ -29,13 +29,13 @@ import { jsonView } from 'jsonview-vue';
 // }
 // ...
 ```
-script标签
+script标签引入js
 ```
-// 引入js
+// 1、Vue.use
 Vue.use(JsonView);
 
 
-// 组件中
+// 2、组件中注册
 // ...
 // components: {
 //    jsonView: JsonView.jsonView
